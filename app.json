@@ -1,28 +1,36 @@
 {
   "expo": {
-    "name": "projetReactNative",
-    "slug": "projetReactNative",
+    "name": "Grille Générateur",
+    "slug": "grille-generateur",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "extra": {
+      "apiBaseUrl": "https://backendgrille.onrender.com/api/draws",
+      "eas": {
+        "projectId": "4abbca7f-ae33-4bb3-a99c-82b719af1b6e"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/4abbca7f-ae33-4bb3-a99c-82b719af1b6e"
     }
   }
 }
